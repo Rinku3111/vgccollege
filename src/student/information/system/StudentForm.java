@@ -39,10 +39,9 @@ PreparedStatement pst=null;
            
            while(rs.next()){
                
-        jLabel3.setText(rs.getString("coursename"));
-          jLabel4.setText(rs.getString("coursename1"));
-            jLabel5.setText(rs.getString("coursename2"));
-              jLabel6.setText(rs.getString("coursename3"));
+        jLabel3.setText(rs.getString("course1"));
+          jLabel4.setText(rs.getString("course2"));
+            jLabel5.setText(rs.getString("course3"));
            }
         
         }
@@ -65,7 +64,6 @@ PreparedStatement pst=null;
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
@@ -76,13 +74,11 @@ PreparedStatement pst=null;
 
         jLabel2.setText("Registered courses");
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("No Course");
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setText("No Course");
 
-        jLabel5.setText("jLabel5");
-
-        jLabel6.setText("jLabel6");
+        jLabel5.setText("No Course");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -99,8 +95,6 @@ PreparedStatement pst=null;
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -114,9 +108,8 @@ PreparedStatement pst=null;
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 393, Short.MAX_VALUE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 395, Short.MAX_VALUE))
         );
 
         pack();
@@ -166,6 +159,5 @@ PreparedStatement pst=null;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }

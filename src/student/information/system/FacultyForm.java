@@ -27,7 +27,7 @@ PreparedStatement pst=null;
         initComponents();
         this.id=id;
         initComponents();
-        String sql = "select * from facultydetail where (fcid=?)";
+        String sql = "select * from facultydetail where (id=?)";
             try{
             conn=database.java_db();
        pst=conn.prepareStatement(sql);
@@ -42,7 +42,7 @@ PreparedStatement pst=null;
            while(rs.next()){
                
         
-          jLabel4.setText(rs.getString("fcclass"));
+          jLabel4.setText(rs.getString("facclass"));
            
            }
             }
